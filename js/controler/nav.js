@@ -38,8 +38,8 @@
             //绑定保存按钮事件
             $document.delegate("#nav-file-save", "click", function(e){
                 var currentCanvas = global.painter.canvas.currentCanvasContainer.getCanvas();
-                //currentCanvas.save();//撤销上一部
-                currentCanvas.import();//撤销上一部
+                currentCanvas.save();//撤销上一部
+                // currentCanvas.import();//撤销上一部
                 $.fn.TorangeNotice({type:'success', content:'保存成功'});//弹出提示
                 window.console.log("触发保存事件");
             });
